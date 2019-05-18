@@ -5,7 +5,7 @@ $(document).ready(function () {
         }, 500);
         return false;
     });
-    $('.testimonal-slider').slick({
+    $('.testimonial-slider').slick({
 		infinite: true,
 		speed: 500,
 		autoplay: true,

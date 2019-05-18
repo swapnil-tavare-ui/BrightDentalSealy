@@ -16,8 +16,11 @@ img{border:0;vertical-align:middle;}
 .floatleft{float: left;}
 body{font-family:'Open Sans', Arial, Helvetica, sans-serif;font-weight: 400;font-size:16px;line-height: 1.5;color:#4c4c4c;}
 .container{margin:0 auto;padding:0 20px;max-width: 1100px;width: 100%;}
+
 .top-header{padding: 10px 0;}
 .firm-name{float: left;font-size: 20px;font-weight: 600; color:#59b6dc;padding: 15px 0;}
+
+
 nav{background-color: #fff;border-bottom-left-radius:40px;border-bottom-right-radius: 40px;}
 nav .container{padding: 0 50px;}
 nav.stickyheader{position: fixed;left: 0;top: 0;width: 100%;z-index: 99;box-shadow: 0 2px 6px 0 rgba(0,0,0,0.12), inset 0 -1px 0 0 #dadce0;border-radius: 0;}
@@ -26,12 +29,16 @@ nav ul{float: right;}
 nav li{padding: 0 10px;float: left;}
 nav li:first-child{padding-left: 0;}
 nav li:last-child{padding-right: 0;}
-nav li a{color: #000;font-size: 14px;font-weight: 600;text-transform: capitalize;padding: 20px 0;display: block;transition: 0.2s all ease;}
+nav li a{color: #000;font-size: 14px;font-weight: 600;text-transform: capitalize;padding: 20px 0;display: block;transition: 0.3s all ease;}
 nav li a:hover{color: #59b6dc;}
+
 .appointment-call{color: #fff;padding-left: 20px;background: url(../img/call.svg) no-repeat left center;
 background-size: 16px;font-size: 14px;font-weight: 600;}
 .appointment-call a:hover{text-decoration: underline;}
-.btn{display: inline-block;padding: 10px 20px;background-color: #fff;color: #59b6dc;font-size: 15px;font-weight: 600;border-radius: 25px;text-transform: capitalize;}
+
+.btn{display: inline-block;padding: 10px 20px;background-color: #fff;color: #59b6dc;font-size: 15px;font-weight: 600;border-radius: 25px;text-transform: capitalize;border: 1px solid transparent;}
+.btn:hover{background-color: #59b6dc;color: #fff;transition: 0.3s all ease-in-out;border: 1px solid #fff;}
+
 .banner{background: #5DB8DF url("../img/banner.jpg") no-repeat right center;background-size: cover;min-height: 100vh;position: relative;}
 .banner-content{text-align: center;margin: 70px 0 0;color: #fff;}
 .banner-content h1{font-size: 50px;font-weight: 600;margin: 0 0 20px;}
@@ -64,11 +71,11 @@ h2.main-title span{border-bottom: 3px solid #59b6dc;padding-bottom: 5px;}
 .services ul li::before{content: '';width: 5px;height: 5px;border-radius: 50%;background-color: #59B6DC;position: absolute;left:0;top: 10px;}
 
 
-.testimonals{padding: 50px 0;border-top: 1px solid #ccc;}
-.testimonal-slider{padding: 0 50px;}
-.testimonal-slider li{visibility: hidden;}
+.testimonial{padding: 50px 0;border-top: 1px solid #ccc;}
+.testimonial-slider{padding: 0 50px;}
+.testimonial-slider li{visibility: hidden;}
 .slick-initialized li{visibility: visible;}
-.testimonals li{ padding: 30px 30px 30px 80px; border: solid 1px #e3e3d9;background:#f9f9f4 url(../img/quote.png) no-repeat left 20px top 30px;}
+.testimonial li{ padding: 30px 30px 30px 80px; border: solid 1px #e3e3d9;background:#f9f9f4 url(../img/quote.png) no-repeat left 20px top 30px;}
 .comment{margin-bottom: 20px;}
 .comment-name{font-weight: 600;}
 
@@ -76,6 +83,7 @@ h2.main-title span{border-bottom: 3px solid #59b6dc;padding-bottom: 5px;}
 .contactinfo{margin-bottom: 30px;}
 .contactinfo li{text-align: center;margin-bottom: 20px;}
 .contactinfo li span{display: inline-block;vertical-align: middle;font-size:16px;font-weight: 400;}
+.contactinfo li:nth-child(2) a:hover{text-decoration: underline;}
 .contactinfo li span svg{width: 30px;height: 30px;display: block;margin-right: 10px;}
 
 .contact .left{width: 60%;float: left;padding-right: 25px;}
@@ -92,6 +100,8 @@ footer{color: #e6e6e6; background-color: #252525;text-align: center;padding: 20p
 footer p{margin-bottom: 10px;}
 footer a:hover{text-decoration: underline;}
 
+.slick-prev, .slick-next{background: #f9f9f4 url(../img/back.svg) no-repeat center center;border: solid 1px #e3e3d9;background-size: 20px;}
+.slick-next{background: #f9f9f4 url(../img/next.svg) no-repeat center center;background-size: 20px;}
 
 /* @media(max-width:1023px){
 
