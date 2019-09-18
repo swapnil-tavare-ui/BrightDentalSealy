@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    $('.hamburger').click(function () {
+        $('nav').toggleClass('active');
+        $('.overlay').fadeIn();
+    });
+    $('.overlay,nav a').click(function () {
+        $('nav').toggleClass('active');
+        $('.overlay').fadeOut();
+    });
+
     $('nav a').click(function () {
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top - 61
@@ -11,9 +20,18 @@ $(document).ready(function () {
 		autoplay: true,
 	});
 });
+
+var maxHeight = 0;
+
+$(".testimonial-slider li").each(function(){
+   if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+});
+
+$(".testimonial-slider li").height(maxHeight);
+
 $(window).scroll(function () {
     var e = $(".sticky_active").offset().top;
-    $(this).scrollTop() > e ? $("nav").addClass("stickyheader") : $("nav").removeClass("stickyheader")
+    $(this).scrollTop() > e ? $("header").addClass("stickyheader") : $("header").removeClass("stickyheader")
 })
 const mHTML = document.getElementById('message'),
     messages = [
